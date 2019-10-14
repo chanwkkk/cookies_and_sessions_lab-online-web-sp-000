@@ -4,10 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def cart
-    session[:cart]||[]
+    #binding.pry
+    session[:cart]||=[]
   end
 
-  def index
 
-  end
+
 end
