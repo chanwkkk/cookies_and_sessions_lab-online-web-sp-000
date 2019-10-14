@@ -1,6 +1,7 @@
 <ul>
 <% if @cart %>
   <% @cart.each do |c|%>
+  <% binding.pry %>
   <li><%= c %><li>
   <% end %>
 <% end %>
