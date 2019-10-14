@@ -1,8 +1,10 @@
+<ul>
 <% if @cart %>
   <% @cart.each do |c|%>
-  <%= c %>
+  <li><%= c %><li>
   <% end %>
 <% end %>
+<ul>
 
 <%= form_tag "/" do %>
   <input type="text" name="product">
